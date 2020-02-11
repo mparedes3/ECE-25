@@ -1,4 +1,4 @@
-module lab3_c(input CL2947MP_x, input CL2947MP_y, input CL2947MP_z, input CL2947MP_w, output CL2947MP_outc);
+module lab3_c(input CL2947MP_w, input CL2947MP_x, input CL2947MP_y, input CL2947MP_z, output CL2947MP_outc);
   wire CL2947MP_xnot, CL2947MP_ynot, CL2947MP_znot, CL2947MP_wnot;
   wire CL2947MP_1, CL2947MP_2, CL2947MP_3, CL2947MP_4, CL2947MP_5;
 
@@ -12,6 +12,6 @@ module lab3_c(input CL2947MP_x, input CL2947MP_y, input CL2947MP_z, input CL2947
   and and4(CL2947MP_4, CL2947MP_wnot, CL2947MP_ynot);
   and and5(CL2947MP_5, CL2947MP_wnot, CL2947MP_z);
 
-  or or1(CL2947MP_outc, CL2947MP_1, CL2947MP_2, CL2947MP_3, CL2947MP_4, CL2947MP_5);
+  nor nor1(CL2947MP_outc, CL2947MP_1, CL2947MP_2, CL2947MP_3, CL2947MP_4, CL2947MP_5);
 
 endmodule

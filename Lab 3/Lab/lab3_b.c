@@ -1,4 +1,5 @@
 // CL2947MP_
+// (wx')+(wz)+(w'xy')+(x'y)+(yz')
 
 module lab3_b(input CL2947MP_x, input CL2947MP_y, input CL2947MP_z, input CL2947MP_w, input CL2947MP_in4, output CL2947MP_out);
   wire CL2947MP_xnot, CL2947MP_ynot, CL2947MP_znot, CL2947MP_wnot;
